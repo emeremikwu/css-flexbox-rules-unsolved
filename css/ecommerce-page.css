@@ -253,8 +253,6 @@ i.fa-th-list {
 
 /* LINE VIEW STYLES */
 
-
-
 .lines.products,
 .lines .product,
 .lines .product-data,
@@ -287,15 +285,19 @@ i.fa-th-list {
   gap: 10px;
 }
 
-.lines .product-action {
-}
-
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines-action .product {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
 }
 
 .lines-action .product-image-wrapper {
@@ -304,13 +306,24 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+}
+
+.lines-action .product-info,
+.lines-action .product-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 .lines-action .product-info {
+  padding: 25px;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  align-items: center;
 }
